@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DFA Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>DFA Visual Simulator</h2>
+    <label>Enter States (comma-separated):</label>
+    <input type="text" id="states" placeholder="e.g., q0,q1,q2">
+
+    <label>Enter Alphabet (comma-separated):</label>
+    <input type="text" id="alphabet" placeholder="e.g., 0,1">
+
+    <label>Enter Transitions (Format: q0,0=q1):</label>
+    <textarea id="transitions" placeholder="q0,0=q1&#10;q1,1=q2"></textarea>
+
+    <label>Start State:</label>
+    <input type="text" id="startState" placeholder="e.g., q0">
+
+    <label>Accept States (comma-separated):</label>
+    <input type="text" id="acceptStates" placeholder="e.g., q2">
+
+    <label>Enter Input String:</label>
+    <input type="text" id="inputString" placeholder="e.g., 01">
+
+    <button onclick="simulateDFA()">Run DFA</button>
+
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
